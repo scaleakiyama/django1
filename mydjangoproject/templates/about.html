@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Биография</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            font-size: 36px;
+            color: darkblue;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ФИО Писателя</h1>
+    <p>
+        Здесь будет несколько абзацев о выбранном человеке. Например, его жизнь,
+        достижения и влияние на литературу.
+    </p>
+    <p>Добавьте еще один абзац с дополнительной информацией о писателе.</p>
+
+    <a href="{% static 'img/backiee-311581.jpg' %}" target="_blank">
+        <img src="{% static 'img/backiee-311581.jpg' %}" alt="bg" style="width: 300px; height: auto">
+    </a>
+
+    <h2>Интересные факты:</h2>
+    <ul>
+        <li>Факт 1</li>
+        <li>Факт 2</li>
+        <li>Факт 3</li>
+    </ul>
+    <a href="{% url 'home' %}">123</a>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <style>
+		body {
+			 font-family: 'Georgia', serif; /* Классический шрифт для книг */
+			 margin: 0;
+			 padding: 20px;
+			 background-color: #f8f8f2; /* Светлый фон, как у страниц книги */
+			 color: #333;
+			 line-height: 1.7;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			 color: #2e0927; /* Чернильный цвет для заголовков */
+			 margin-bottom: 0.75rem;
+			 font-weight: bold;
+		}
+
+		h1 {
+			 border-bottom: 2px solid #a77979; /* Линия под заголовком, как подчеркивание в книге */
+			 padding-bottom: 0.5rem;
+			 font-size: 2.2rem;
+		}
+
+		p {
+			 margin-bottom: 1.2rem;
+			 text-align: justify; /* Выравнивание по ширине, как в книгах */
+		}
+
+		ul, ol {
+			 margin-bottom: 1.2rem;
+			 padding-left: 30px;
+		}
+
+		li {
+			 margin-bottom: 0.5rem; /* Небольшой отступ между пунктами списка */
+		}
+
+		a {
+			 color: #967259; /* Цвет ссылок, как старые чернила */
+			 text-decoration: none;
+			 border-bottom: 1px dotted #967259; /* Пунктирная линия под ссылкой */
+		}
+
+		a:hover {
+			 text-decoration: none;
+			 border-bottom: 1px solid #967259; /* Сплошная линия при наведении */
+		}
+
+		/* Дополнительные стили для "книжного" вида */
+		body {
+			 max-width: 800px; /* Ограничение ширины для удобства чтения */
+			 margin: 20px auto; /* Центрирование контента */
+			 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Тень, как у книги */
+			 padding: 30px;
+			 border-radius: 5px; /* Закругленные углы */
+		}
+
+		/* Стиль для первой буквы абзаца (как в старых книгах) */
+		p:first-letter {
+			 font-size: 2rem;
+			 font-weight: bold;
+			 color: #2e0927;
+			 float: left;
+			 margin: 0.1em 0.1em 0.1em 0;
+			 line-height: 1;
+		}
+  </style>
+</head>
+<body>
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 2</h2>
+    <h3>Заголовок 3</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+    <p>Это главная страница нашего веб-приложения</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <a href="{% url 'about' %}">О нас</a>
+</body>
+</html>
